@@ -58,10 +58,19 @@
             "collection_handle": "testteta",
             "product_limit": 10
           }
+        },
+        "tab_9dY9Kk": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "New arrivals",
+            "collection_handle": "vans",
+            "product_limit": 10
+          }
         }
       },
       "block_order": [
-        "tab_cUBcDd"
+        "tab_cUBcDd",
+        "tab_9dY9Kk"
       ],
       "settings": {}
     }
