@@ -99,10 +99,33 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "1741604951eba109e4": {
+      "type": "apps",
+      "blocks": {
+        "kudosi_ali_reviews_widget_box_C9wMge": {
+          "type": "shopify://apps/kudosi-ali-reviews/blocks/widget-box/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "settings": {
+            "product": "",
+            "name": "Review Box",
+            "vertical_alignment": "2",
+            "rating_color": "#1F1F1F",
+            "section_color": "#ffffff",
+            "primary_text_color": "#1F1F1F"
+          }
+        }
+      },
+      "block_order": [
+        "kudosi_ali_reviews_widget_box_C9wMge"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "1741604951eba109e4"
   ]
 }
