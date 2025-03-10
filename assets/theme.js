@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", function() {
    const tabButtons = document.querySelectorAll('.tab-button');
    if (tabButtons.length > 0) {
      tabButtons[0].classList.add('active');
-     var firstTabId = tabButtons[0].getAttribute('data-tab');
+     let firstTabId = tabButtons[0].getAttribute('data-tab');
      document.querySelectorAll('.swiper-container.slider').forEach(function(slider) {
        slider.style.display = 'none';
      });
-     var firstSlider = document.getElementById('tab-' + firstTabId);
+     let firstSlider = document.getElementById('tab-' + firstTabId);
      if (firstSlider) {
        firstSlider.style.display = 'block';
      }
@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function() {
          btn.classList.remove('active');
        });
        button.classList.add('active');
-       var tabId = button.getAttribute('data-tab');
+       let tabId = button.getAttribute('data-tab');
        document.querySelectorAll('.swiper-container.slider').forEach(function(slider) {
          slider.style.display = 'none';
        });
-       var activeSlider = document.getElementById('tab-' + tabId);
+       let activeSlider = document.getElementById('tab-' + tabId);
        if (activeSlider) {
          activeSlider.style.display = 'block';
        }
@@ -116,9 +116,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.querySelectorAll('.add-to-cart').forEach(function(button) {
       button.addEventListener('click', function() {
-        var productCard = button.closest('.product-card');
-        var variantSelector = productCard.querySelector('.variant-selector');
-        var variantId;
+        let productCard = button.closest('.product-card');
+        let variantSelector = productCard.querySelector('.variant-selector');
+        let variantId;
         
         if (variantSelector) {
           variantId = variantSelector.value;
