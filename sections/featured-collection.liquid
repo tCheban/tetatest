@@ -22,6 +22,11 @@
                   <a href="{{ product.url }}" class="product-link">
                     <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
                   </a>
+                  {% if product.metafields.custom.best_seller == true %}
+                    <div>
+                      <span class="badge">Best Seller</span>
+                    </div>
+                  {% endif %}
                   <h3>{{ product.title }}</h3>
                   {% if product.metafields.custom.product_subtitle %}
                     <p class="product-description">{{ product.metafields.custom.product_subtitle }}</p>
